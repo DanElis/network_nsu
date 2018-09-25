@@ -69,7 +69,7 @@ def main():
 def print_list(joinedCopies):
 	print("\nJoined copies")
 	for key in joinedCopies:
-		print(joinedCopies[key][1], key)
+		print(joinedCopies[key][1])
 
 	#print([joinedCopies[key][1] for key in joinedCopies.keys()])	
 
@@ -79,9 +79,6 @@ def is_live(joinedCopies):
 		if(now - joinedCopies[key][0] > 15):
 			del(joinedCopies[key])
 			print_list(joinedCopies)
-
-
-
 
 
 if __name__ == '__main__':
